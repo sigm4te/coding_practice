@@ -1,6 +1,6 @@
 package grokking_algorithms.chapter_1
 
-/** Chapter 1. Binary Search */
+/** Chapter 1. Introduction */
 
 fun main() {
     val number = 199
