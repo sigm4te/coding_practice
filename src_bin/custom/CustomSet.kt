@@ -1,7 +1,7 @@
 package custom
 
 /**
- * Самодельный Set (Custom Set).
+ * Самодельное множество <целых чисел> (Custom Set <Ints>).
  */
 
 class CustomSet(private val size: Int) {
