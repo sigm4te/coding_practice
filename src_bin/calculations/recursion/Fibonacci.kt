@@ -11,7 +11,12 @@ package calculations.recursion
 
 fun main() {
     val number = readln().toInt()
+    // Обычная рекурсия
     println("The $number-th Fibonacci number is ${fibonacci(number)}.")
+
+    // Оптимизированная рекурсия (с кешированием)
+    val cache = IntArray(number + 1) { 0 }
+    println("The $number-th Fibonacci number is ${fibonacciOptimised(number, cache)}.")
 }
 
 fun fibonacci(i: Int): Int =
@@ -21,6 +26,18 @@ fun fibonacci(i: Int): Int =
         1
     } else if (i > 1) {
         fibonacci(i - 1) + fibonacci(i - 2)
+    } else {
+        -1
+    }
+
+fun fibonacciOptimised(i: Int, cache: IntArray): Int =
+    if (i == 0) {
+        0
+    } else if (i == 1) {
+        1
+    } else if (i > 1) {
+        if (cache[i] == 0) cache[i] = fibonacciOptimised(i - 1, cache) + fibonacciOptimised(i - 2, cache)
+        cache[i]
     } else {
         -1
     }
