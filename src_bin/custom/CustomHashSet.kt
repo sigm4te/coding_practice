@@ -1,10 +1,10 @@
 package custom
 
 /**
- * Самодельное множество <целых чисел> (Custom Set <Ints>).
+ * Самодельное хэш-множество <целых чисел> (Custom Hash Set <Ints>).
  */
 
-class CustomSet(private val size: Int) {
+class CustomHashSet(private val size: Int) {
     private var value: ArrayList<ArrayList<Int>> = arrayListOf()
 
     init {
@@ -13,8 +13,10 @@ class CustomSet(private val size: Int) {
         }
     }
 
+    private fun hash(x: Int): Int = x % size
+
     fun find(x: Int): Boolean {
-        value[x % size].forEach {
+        value[hash(x)].forEach {
             if (it == x) return true
         }
         return false
@@ -22,7 +24,7 @@ class CustomSet(private val size: Int) {
 
     fun add(x: Int) {
         if (!find(x)) {
-            value[x % size].add(x)
+            value[hash(x)].add(x)
         }
     }
 
@@ -34,7 +36,7 @@ class CustomSet(private val size: Int) {
 
     fun delete(x: Int) {
         if (find(x)) {
-            val set = value[x % size]
+            val set = value[hash(x)]
             for (i in 0 until set.size) {
                 if (set[i] == x) {
                     set[i] = set.last()
@@ -48,7 +50,7 @@ class CustomSet(private val size: Int) {
 }
 
 fun main() {
-    val customSet = CustomSet(10).apply { addAll(1, 3, 7, 9, 11, 12, 15, 18, 22, 25, 28) }
+    val customSet = CustomHashSet(10).apply { addAll(1, 3, 7, 9, 11, 12, 15, 18, 22, 25, 28) }
 
     customSet.add(10)
     println(customSet.toString())
