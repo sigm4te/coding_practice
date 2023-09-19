@@ -27,8 +27,8 @@ fun main() {
         for (j in i..numberMax) {
             val value = i * j
             if (isPalindromicNumber(value)) {
-                // // ↓ Вывод всех палиндромов ↓
-                // println(value)
+//                 // ↓ Вывод всех палиндромов ↓
+//                 println(value)
                 result = max(value, result)
             }
         }

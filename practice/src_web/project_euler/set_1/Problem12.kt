@@ -1,6 +1,6 @@
 package project_euler.set_1
 
-import project_euler.utils.findAllDivisors
+//import project_euler.utils.findAllDivisors
 import project_euler.utils.findDivisorsAmount
 
 /**
@@ -46,8 +46,8 @@ fun main() {
         val triangleNumber = getTriangleNumberByItem(i)
         val divisorsCounter = findDivisorsAmount(triangleNumber)
         println("Divisors amount: $divisorsCounter")
-        // // ↓ Вывод всех делителей числа ↓
-        // println(findAllDivisors(triangleNumber).toString())
+//         // ↓ Вывод всех делителей числа ↓
+//         println(findAllDivisors(triangleNumber).toString())
 
         if (divisorsCounter > divisorsLimit) {
             println("Divisors > $divisorsLimit. The value of the triangle number is $triangleNumber.")

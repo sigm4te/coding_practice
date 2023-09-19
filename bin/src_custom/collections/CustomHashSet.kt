@@ -1,4 +1,4 @@
-package custom
+package collections
 
 /**
  * Самодельное хэш-множество <целых чисел> (Custom Hash Set <Ints>).

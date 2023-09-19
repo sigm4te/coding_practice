@@ -1,4 +1,4 @@
-package custom
+package collections
 
 /**
  * Самодельный связанный список (Custom Linked List).

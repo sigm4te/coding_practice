@@ -3,8 +3,12 @@
 
 Examples and exercises.
 
+### Bin
+- [ ] [Calculations](bin/src_calc)
+- [ ] [Custom](bin/src_custom)
+
 ### Books
-- [ ] [Grokking Algorithms](src_book/grokking_algorithms)
+- [ ] [Grokking Algorithms](practice/src_book/grokking_algorithms)
 
 ### Web
-- [ ] [Project Euler](src_web/project_euler)
+- [ ] [Project Euler](practice/src_web/project_euler)

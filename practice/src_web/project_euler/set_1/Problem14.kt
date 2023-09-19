@@ -35,12 +35,12 @@ fun main() {
         var seq = 1
         var num = i
 
-        // // ↓ Вывести последовательности для всех чисел ↓
-        // do {
-        //     print("$num, ")
-        //     num = if (num % 2 == 0L) { num / 2 } else { 3 * num + 1 }
-        // } while (num != 1L)
-        // println("1.")
+//         // ↓ Вывести последовательности для всех чисел ↓
+//         do {
+//             print("$num, ")
+//             num = if (num % 2 == 0L) { num / 2 } else { 3 * num + 1 }
+//         } while (num != 1L)
+//         println("1.")
 
         do {
             if (num % 2 == 0L) {
@@ -57,8 +57,8 @@ fun main() {
             number = i
         }
 
-        // // ↓ Вывести длину последовательностей для всех чисел ↓
-        // println("Number is $i, chain is $seq.")
+//         // ↓ Вывести длину последовательностей для всех чисел ↓
+//         println("Number is $i, chain is $seq.")
     }
     println("The longest chain: number is $number, chain is $sequence.")
 }

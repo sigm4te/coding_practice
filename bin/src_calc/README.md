@@ -1,5 +1,5 @@
-# Bin
-`Kotlin`
+# Calculations
+`Kotlin` | `Bin`
 
 - Algorithms:
     - [Search](algorithms/search)
@@ -8,5 +8,3 @@
     - [Array](calculations/array)
     - [Digit](calculations/digit)
     - [Recursion](calculations/recursion)
-
-* [Custom](custom)
