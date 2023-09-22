@@ -12,3 +12,6 @@ Examples and exercises.
 
 ### Web
 - [ ] [Project Euler](practice/src_web/project_euler)
+
+### Programs
+- [x] [Watermark](programs/src/watermark)
